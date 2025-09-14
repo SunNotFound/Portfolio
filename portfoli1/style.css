@@ -30,8 +30,8 @@ li {
 }
 
 .label {
-  font-weight: bold;
-  color: var(--accent);
+  font-weight: 600;
+  color: #6EA8DC;
 }
 
 a {
@@ -46,10 +46,16 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2 {
+h1 {
+  color: var(--heading);
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+h2 {
   color: var(--heading);
   font-size: 1.8em;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 main {
@@ -77,6 +83,10 @@ header img {
   margin-top: 10px;
 }
 
+p {
+  margin-bottom: 15px;
+}
+
 
 article {
   background: var(--card);
@@ -88,4 +98,54 @@ article {
 
 article:hover {
   background: var(--card-hover);
+}
+
+a.project-link {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+a.project-link:hover {
+  background: var(--card-hover);
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+  
+  header img {
+    width: 180px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+  
+  header img {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
 }
