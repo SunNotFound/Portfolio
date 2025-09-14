@@ -1,0 +1,108 @@
+/* ========================
+   VARIÁVEIS DE CORES
+======================== */
+:root {
+  --bg: #012146;
+  --text: #E1E6FA;
+  --accent: #375D81;
+  --link: #C4D7ED;
+  --heading: #ABC8E2;
+  --card: #04305c;
+  --card-hover: #3b6799;
+}
+
+/* ========================
+   BASE
+======================== */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+/* ========================
+   LISTAS
+======================== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ========================
+   TEXTO E LINKS
+======================== */
+.label {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+a {
+  color: var(--link);
+  font-size: 1em;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+h1, h2 {
+  color: var(--heading);
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/* ========================
+   LAYOUT
+======================== */
+main {
+  max-width: 900px;   /* limite da largura */
+  margin: auto;       /* centraliza */
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px; /* espaçamento entre blocos */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+header img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* deixa redondo */
+  border: 4px solid #fff;
+  margin-top: 10px;
+}
+
+/* ========================
+   ARTIGOS / CARDS
+======================== */
+article {
+  background: var(--card);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+article:hover {
+  background: var(--card-hover);
+}
