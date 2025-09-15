@@ -49,6 +49,11 @@ a:hover {
   text-decoration: underline;
 }
 
+#nounderline {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 h1 {
   color: var(--heading);
   font-size: 2.5em;
@@ -99,9 +104,6 @@ article {
   transition: background 0.3s ease;
 }
 
-article:hover {
-  background: var(--card-hover);
-}
 
 a.project-link {
   display: inline-block;
